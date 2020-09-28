@@ -2,10 +2,11 @@ package entities;
 
 public class Person {
     public String name;
-    String sex;
+    String id;
+    int age;
     
     public void laugh(){
-        System.out.println(name+ "je je je");
+        System.out.println(name);
     }
 
     public String getName() {
@@ -16,12 +17,22 @@ public class Person {
         this.name = name;
     }
 
-    public String getSex() {
-        return sex;
+    public String getId() {
+        return id;
     }
 
-    public void setSex(String sex) {
-        this.sex = sex;
+    public void setId(String id) {
+        this.id = id;
     }
+
+    public int getAge() {
+        return age;
+    }
+
+    public void setAge(int age) {
+        this.age = age;
+    }
+
+    
     
 }
